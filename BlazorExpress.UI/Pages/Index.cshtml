@@ -4,86 +4,61 @@
     ViewData["Title"] = "Blazor Component Libraries";
 }
 
-<section id="top" class="hero-section py-4 py-lg-5">
-    <div class="hero-gradient rounded-5 shadow-lg overflow-hidden fade-up">
-        <div class="p-4 p-lg-5">
-            <div class="row g-4 g-xl-5 align-items-center">
-                <div class="col-lg-7">
-                    <div class="d-flex align-items-center gap-3 mb-4">
-                        <img src="https://chartjs.blazorexpress.com/_content/BlazorExpress.ChartJS.Demo.RCL/icons/logo.png" alt="BlazorExpress logo" width="72" height="72" class="logo-float rounded-4 bg-white p-2 shadow-sm" />
-                        <div>
-                            <span class="badge rounded-pill text-bg-light text-primary mb-2">blazorexpress.com</span>
-                            <p class="small text-uppercase fw-semibold text-white-50 mb-0">Focused, open-source component libraries for modern Blazor apps</p>
+<section id="top" class="landing-hero mb-4 mb-lg-5 fade-up">
+    <div class="hero-shell rounded-5 p-4 p-lg-5 shadow-sm overflow-hidden">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+                <span class="badge rounded-pill hero-badge mb-3">Built for real Blazor apps</span>
+                <h1 class="display-4 fw-semibold mb-3">I build focused Blazor libraries that solve one job well.</h1>
+                <p class="lead text-body-secondary mb-4">BlazorExpress is where I publish the libraries I actively maintain. Start here, then go straight to the docs, demos, GitHub repo, or NuGet package you need.</p>
+                <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                    <a class="btn btn-primary btn-lg px-4" href="#libraries">View libraries</a>
+                    <a class="btn btn-outline-secondary btn-lg px-4" href="#releases">Latest releases</a>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-3 g-3">
+                    <div class="col">
+                        <div class="mini-panel rounded-4 p-3 h-100">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Libraries</p>
+                            <p class="h5 mb-0">2 packages I maintain</p>
                         </div>
                     </div>
-                    <h1 class="display-3 fw-bold text-white lh-sm mb-3">Discover the right BlazorExpress library in one pass.</h1>
-                    <p class="lead text-white-50 mb-4">BlazorExpress brings our component libraries together in one place, with current releases, core features, and direct links to docs, demos, GitHub repos, and NuGet packages.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
-                        <a class="btn btn-light btn-lg px-4" href="#libraries">Explore libraries</a>
-                        <a class="btn btn-outline-light btn-lg px-4" href="#releases">See latest releases</a>
+                    <div class="col">
+                        <div class="mini-panel rounded-4 p-3 h-100">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Focus</p>
+                            <p class="h5 mb-0">Practical charts and UI</p>
+                        </div>
                     </div>
-                    <div class="row row-cols-1 row-cols-sm-3 g-3">
-                        <div class="col">
-                            <div class="hero-surface rounded-4 p-3 h-100">
-                                <p class="small text-uppercase fw-semibold text-white-50 mb-2">Libraries</p>
-                                <p class="h5 text-white mb-0">ChartJS and Bulma</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="hero-surface rounded-4 p-3 h-100">
-                                <p class="small text-uppercase fw-semibold text-white-50 mb-2">Current versions</p>
-                                <p class="h5 text-white mb-0">v1.2.1 and v1.1.0</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="hero-surface rounded-4 p-3 h-100">
-                                <p class="small text-uppercase fw-semibold text-white-50 mb-2">Best for</p>
-                                <p class="h5 text-white mb-0">Fast evaluation and practical adoption</p>
-                            </div>
+                    <div class="col">
+                        <div class="mini-panel rounded-4 p-3 h-100">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Next step</p>
+                            <p class="h5 mb-0">Open docs or demos</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="card border-0 shadow-sm hover-lift">
-                        <div class="card-body p-4 p-lg-5">
-                            <div class="d-flex justify-content-between align-items-start mb-4">
-                                <div>
-                                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">At a glance</p>
-                                    <h2 class="h3 mb-0">Current BlazorExpress libraries with clear next steps.</h2>
-                                </div>
-                                <span class="badge text-bg-success">Live</span>
-                            </div>
-                            <div class="list-group list-group-flush border rounded-4 mb-4">
-                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">
-                                    <span>
-                                        <span class="fw-semibold d-block">BlazorExpress.ChartJS</span>
-                                        <span class="small text-body-secondary">Charts, dataset animation, localization, and utilities</span>
-                                    </span>
-                                    <span class="badge text-bg-primary">v1.2.1</span>
-                                </a>
-                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">
-                                    <span>
-                                        <span class="fw-semibold d-block">BlazorExpress.Bulma</span>
-                                        <span class="small text-body-secondary">UI building blocks, forms, dialogs, icons, and layout</span>
-                                    </span>
-                                    <span class="badge text-bg-primary">v1.1.0</span>
-                                </a>
-                            </div>
-                            <div class="row row-cols-1 row-cols-sm-2 g-3">
-                                <div class="col">
-                                    <div class="border rounded-4 p-3 h-100">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Open source</p>
-                                        <p class="mb-0">The libraries are source-available, versioned, and easy to inspect before adoption.</p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="border rounded-4 p-3 h-100">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Docs first</p>
-                                        <p class="mb-0">Every library card leads directly into docs, demos, GitHub, and package installation.</p>
-                                    </div>
-                                </div>
-                            </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 p-lg-5">
+                        <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Current lineup</p>
+                        <h2 class="h3 mb-4">What I ship today.</h2>
+                        <div class="d-grid gap-3">
+                            <a class="simple-link-card text-decoration-none" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">
+                                <span>
+                                    <span class="d-block fw-semibold text-dark">BlazorExpress.ChartJS</span>
+                                    <span class="small text-body-secondary">My charting library for Blazor dashboards, reports, and data-heavy screens.</span>
+                                </span>
+                                <span class="badge text-bg-light border text-dark">v1.2.1</span>
+                            </a>
+                            <a class="simple-link-card text-decoration-none" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">
+                                <span>
+                                    <span class="d-block fw-semibold text-dark">BlazorExpress.Bulma</span>
+                                    <span class="small text-body-secondary">My Bulma-based component library for forms, dialogs, and layout work.</span>
+                                </span>
+                                <span class="badge text-bg-light border text-dark">v1.1.0</span>
+                            </a>
                         </div>
+                        <hr class="my-4" />
+                        <p class="text-body-secondary mb-0">I keep both libraries open source and link every release to docs, demos, package feeds, and source code.</p>
                     </div>
                 </div>
             </div>
@@ -91,27 +66,12 @@
     </div>
 </section>
 
-<section class="pb-4">
-    <div class="card border-0 shadow-sm fade-up fade-delay-1">
-        <div class="card-body p-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
-            <p class="small text-uppercase text-body-secondary fw-semibold mb-0">Open-source libraries with active releases, practical documentation, and direct package access</p>
-            <div class="d-flex flex-wrap gap-2">
-                <span class="badge text-bg-light border text-dark">Open source</span>
-                <span class="badge text-bg-light border text-dark">Docs-first</span>
-                <span class="badge text-bg-light border text-dark">Responsive</span>
-                <span class="badge text-bg-light border text-dark">Release-aware</span>
-                <span class="badge text-bg-light border text-dark">NuGet ready</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="libraries" class="py-5">
-    <div class="row justify-content-center text-center mb-4 mb-lg-5 fade-up fade-delay-1">
-        <div class="col-xl-9">
-            <span class="badge rounded-pill text-bg-dark mb-3">Library highlights</span>
-            <h2 class="display-6 fw-semibold mb-3">Start with the library that matches your app, then move straight into documentation and demos.</h2>
-            <p class="lead text-body-secondary mb-0">ChartJS focuses on charts and data visualization. Bulma focuses on UI building blocks, forms, dialogs, and layout primitives for day-to-day Blazor application work.</p>
+<section id="libraries" class="py-4 py-lg-5">
+    <div class="row justify-content-center text-center mb-4">
+        <div class="col-xl-8 fade-up fade-delay-1">
+            <span class="badge rounded-pill text-bg-light border text-dark mb-3">Libraries</span>
+            <h2 class="display-6 fw-semibold mb-3">These are the libraries I actively build and release.</h2>
+            <p class="lead text-body-secondary mb-0">I keep this page short on purpose: what each library is for, what changed recently, and where to go next.</p>
         </div>
     </div>
     <div class="row row-cols-1 row-cols-xl-2 g-4">
@@ -120,70 +80,24 @@
                 <div class="card-body p-4 p-lg-5">
                     <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
                         <div>
-                            <span class="badge rounded-pill text-bg-primary mb-2">Charting library</span>
+                            <span class="badge rounded-pill section-badge mb-2">Charting</span>
                             <h3 class="h2 mb-2">BlazorExpress.ChartJS</h3>
-                            <p class="text-body-secondary mb-0">Focused Blazor charting with a compact component set and strong demo-driven documentation.</p>
+                            <p class="text-body-secondary mb-0">I built this library for Blazor apps that need clean chart components and solid data visualization without extra clutter.</p>
                         </div>
                         <span class="badge text-bg-light border text-dark">v1.2.1</span>
                     </div>
-                    <div class="alert alert-primary" role="alert">
-                        <div class="fw-semibold mb-1">New in v1.2.1</div>
-                        BarChart styling improvements, new LineChart features, and better documentation.
-                    </div>
-                    <div class="preview-frame mb-4">
-                        <div class="preview-panel p-4 p-lg-4 h-100">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="badge text-bg-primary">Highlights</span>
-                                <span class="small text-body-secondary">chartjs.blazorexpress.com</span>
-                            </div>
-                            <div class="row g-3">
-                                <div class="col-sm-8">
-                                    <div class="snapshot-surface rounded-4 p-3 h-100">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Popular chart types</p>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <span class="badge text-bg-light border text-dark">Bar</span>
-                                            <span class="badge text-bg-light border text-dark">Line</span>
-                                            <span class="badge text-bg-light border text-dark">Pie</span>
-                                            <span class="badge text-bg-light border text-dark">Radar</span>
-                                            <span class="badge text-bg-light border text-dark">Scatter</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="snapshot-surface rounded-4 p-3 h-100 text-sm-center">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Release</p>
-                                        <p class="display-6 fw-bold text-primary mb-0">1.2.1</p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="snapshot-surface rounded-4 p-3">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">What stands out</p>
-                                        <div class="row row-cols-1 row-cols-sm-3 g-2">
-                                            <div class="col"><div class="border rounded-3 p-2 text-center small">Stacked datasets</div></div>
-                                            <div class="col"><div class="border rounded-3 p-2 text-center small">Data labels</div></div>
-                                            <div class="col"><div class="border rounded-3 p-2 text-center small">Animation timing</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="simple-detail-grid mb-4">
+                        <div class="simple-detail rounded-4 p-3">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Includes</p>
+                            <p class="mb-0">Bar, Line, Pie, Radar, Scatter.</p>
                         </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
-                        <div class="col">
-                            <div class="border rounded-4 p-3 h-100">
-                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Important components</p>
-                                <p class="mb-0">Bar, Line, Pie, Doughnut, Radar, Scatter.</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="border rounded-4 p-3 h-100">
-                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Key features</p>
-                                <p class="mb-0">Stacked datasets, data labels, locale support, border radius, and animation delays.</p>
-                            </div>
+                        <div class="simple-detail rounded-4 p-3">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Latest update</p>
+                            <p class="mb-0">In v1.2.1 I refined styling, added LineChart features, and tightened the documentation.</p>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap gap-2">
-                        <a class="btn btn-primary" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">Visit site</a>
+                        <a class="btn btn-primary" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">Site</a>
                         <a class="btn btn-outline-primary" href="https://chartjs.blazorexpress.com/docs/getting-started/introduction" target="_blank" rel="noreferrer">Docs</a>
                         <a class="btn btn-outline-primary" href="https://chartjs.blazorexpress.com/demos/bar-chart" target="_blank" rel="noreferrer">Demos</a>
                         <a class="btn btn-outline-primary" href="https://github.com/BlazorExpress/BlazorExpress.ChartJS" target="_blank" rel="noreferrer">GitHub</a>
@@ -197,70 +111,24 @@
                 <div class="card-body p-4 p-lg-5">
                     <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
                         <div>
-                            <span class="badge rounded-pill text-bg-primary mb-2">Bulma UI library</span>
+                            <span class="badge rounded-pill section-badge mb-2">UI</span>
                             <h3 class="h2 mb-2">BlazorExpress.Bulma</h3>
-                            <p class="text-body-secondary mb-0">A clean Bulma-based Blazor library for form-heavy apps, layout primitives, and practical interaction components.</p>
+                            <p class="text-body-secondary mb-0">I built this library for Blazor apps that need dependable form controls, dialogs, layout helpers, and everyday UI pieces.</p>
                         </div>
                         <span class="badge text-bg-light border text-dark">v1.1.0</span>
                     </div>
-                    <div class="alert alert-primary" role="alert">
-                        <div class="fw-semibold mb-1">New in v1.1.0</div>
-                        New Dropdown, Navbar, NumberInput, and PdfViewer components, plus improved documentation.
-                    </div>
-                    <div class="preview-frame mb-4">
-                        <div class="preview-panel p-4 p-lg-4 h-100">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="badge text-bg-primary">Highlights</span>
-                                <span class="small text-body-secondary">bulma.blazorexpress.com</span>
-                            </div>
-                            <div class="row g-3">
-                                <div class="col-sm-8">
-                                    <div class="snapshot-surface rounded-4 p-3 h-100">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Popular UI areas</p>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <span class="badge text-bg-light border text-dark">Dropdown</span>
-                                            <span class="badge text-bg-light border text-dark">Navbar</span>
-                                            <span class="badge text-bg-light border text-dark">TextInput</span>
-                                            <span class="badge text-bg-light border text-dark">Dialog</span>
-                                            <span class="badge text-bg-light border text-dark">PdfViewer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="snapshot-surface rounded-4 p-3 h-100 text-sm-center">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Release</p>
-                                        <p class="display-6 fw-bold text-primary mb-0">1.1.0</p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="snapshot-surface rounded-4 p-3">
-                                        <p class="small text-uppercase text-body-secondary fw-semibold mb-2">What stands out</p>
-                                        <div class="row row-cols-1 row-cols-sm-3 g-2">
-                                            <div class="col"><div class="border rounded-3 p-2 text-center small">Forms</div></div>
-                                            <div class="col"><div class="border rounded-3 p-2 text-center small">Layout</div></div>
-                                            <div class="col"><div class="border rounded-3 p-2 text-center small">Dialogs</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="simple-detail-grid mb-4">
+                        <div class="simple-detail rounded-4 p-3">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Includes</p>
+                            <p class="mb-0">Dropdown, Navbar, NumberInput, PdfViewer, Dialogs.</p>
                         </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
-                        <div class="col">
-                            <div class="border rounded-4 p-3 h-100">
-                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Important components</p>
-                                <p class="mb-0">Dropdown, Navbar, NumberInput, PdfViewer, Confirm Dialog, TextInput.</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="border rounded-4 p-3 h-100">
-                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Key features</p>
-                                <p class="mb-0">Forms, icons, layout helpers, skeleton loading, dialogs, and responsive UI building blocks.</p>
-                            </div>
+                        <div class="simple-detail rounded-4 p-3">
+                            <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Latest update</p>
+                            <p class="mb-0">In v1.1.0 I added Dropdown, Navbar, NumberInput, and PdfViewer components.</p>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap gap-2">
-                        <a class="btn btn-primary" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">Visit site</a>
+                        <a class="btn btn-primary" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">Site</a>
                         <a class="btn btn-outline-primary" href="https://bulma.blazorexpress.com/docs/getting-started/introduction" target="_blank" rel="noreferrer">Docs</a>
                         <a class="btn btn-outline-primary" href="https://bulma.blazorexpress.com/demos/skeletons" target="_blank" rel="noreferrer">Demos</a>
                         <a class="btn btn-outline-primary" href="https://github.com/BlazorExpress/BlazorExpress.Bulma" target="_blank" rel="noreferrer">GitHub</a>
@@ -272,101 +140,51 @@
     </div>
 </section>
 
-<section id="releases" class="py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col d-flex">
-            <div class="card border-0 shadow-sm w-100 hover-lift fade-up fade-delay-1">
+<section id="releases" class="py-4 py-lg-5">
+    <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4 d-flex">
+            <div class="card border-0 shadow-sm w-100 fade-up fade-delay-1">
                 <div class="card-body p-4">
-                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Release snapshot</p>
+                    <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Release</p>
                     <h3 class="h4 mb-3">ChartJS v1.2.1</h3>
-                    <p class="text-body-secondary mb-0">BarChart styling improvements, added LineChart capabilities, and documentation work that reduces setup friction.</p>
+                    <p class="text-body-secondary mb-0">I focused this release on cleaner styling, more LineChart options, and clearer docs.</p>
                 </div>
             </div>
         </div>
-        <div class="col d-flex">
-            <div class="card border-0 shadow-sm w-100 hover-lift fade-up fade-delay-2">
+        <div class="col-lg-4 d-flex">
+            <div class="card border-0 shadow-sm w-100 fade-up fade-delay-2">
                 <div class="card-body p-4">
-                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Release snapshot</p>
+                    <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Release</p>
                     <h3 class="h4 mb-3">Bulma v1.1.0</h3>
-                    <p class="text-body-secondary mb-0">Dropdown, Navbar, NumberInput, and PdfViewer strengthen the library for day-to-day business UI use cases.</p>
+                    <p class="text-body-secondary mb-0">I expanded the library with new navigation, input, and viewer components for day-to-day UI work.</p>
                 </div>
             </div>
         </div>
-        <div class="col d-flex">
-            <div class="card border-0 text-bg-dark bg-gradient shadow-lg w-100 fade-up fade-delay-3">
+        <div class="col-lg-4 d-flex">
+            <div class="card border-0 release-summary w-100 fade-up fade-delay-3">
                 <div class="card-body p-4">
-                    <p class="small text-uppercase fw-semibold text-white-50 mb-2">BlazorExpress today</p>
-                    <h3 class="h4 mb-3">ChartJS and Bulma are the current library highlights.</h3>
-                    <p class="text-white-50 mb-0">As the ecosystem grows, additional BlazorExpress libraries can be surfaced in the same release-first catalog alongside docs, demos, and package links.</p>
+                    <p class="small text-uppercase fw-semibold mb-2">Today</p>
+                    <h3 class="h4 mb-3">Two focused libraries. Clear starting point.</h3>
+                    <p class="mb-0">This page reflects how I want BlazorExpress to feel: direct, useful, and easy to scan.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="features" class="py-5">
-    <div class="row justify-content-center text-center mb-4 mb-lg-5 fade-up fade-delay-1">
-        <div class="col-xl-8">
-            <span class="badge rounded-pill text-bg-light border text-dark mb-3">Why BlazorExpress</span>
-            <h2 class="display-6 fw-semibold mb-3">Each library is positioned around a clear use case, an active release, and a short path to implementation.</h2>
-            <p class="lead text-body-secondary mb-0">The goal is straightforward: help developers understand what each library offers, what shipped recently, and where to go next to evaluate or install it.</p>
-        </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-        <div class="col d-flex">
-            <div class="card border-0 shadow-sm w-100 hover-lift fade-up fade-delay-1">
-                <div class="card-body p-4">
-                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Focused scope</p>
-                    <h3 class="h4">Each library has a clear job</h3>
-                    <p class="text-body-secondary mb-0">ChartJS is for charts and data visualization. Bulma is for UI building blocks, forms, dialogs, and layout.</p>
-                </div>
+<section id="features" class="pt-4 pb-5">
+    <div class="simple-callout rounded-5 p-4 p-lg-5 fade-up fade-delay-2">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-8">
+                <span class="badge rounded-pill text-bg-light border text-dark mb-3">Why this layout</span>
+                <h2 class="display-6 fw-semibold mb-3">I want visitors to understand the libraries in one quick pass.</h2>
+                <p class="text-body-secondary mb-0">The goal is simple: find the right library, confirm the release, and move into the docs or demo without friction.</p>
             </div>
-        </div>
-        <div class="col d-flex">
-            <div class="card border-0 shadow-sm w-100 hover-lift fade-up fade-delay-2">
-                <div class="card-body p-4">
-                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Docs and demos</p>
-                    <h3 class="h4">The next step is always visible</h3>
-                    <p class="text-body-secondary mb-0">Every library section keeps docs, demos, GitHub, and NuGet within immediate reach.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col d-flex">
-            <div class="card border-0 shadow-sm w-100 hover-lift fade-up fade-delay-3">
-                <div class="card-body p-4">
-                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Release visibility</p>
-                    <h3 class="h4">The current version is part of the story</h3>
-                    <p class="text-body-secondary mb-0">Current versions stay visible so developers can quickly see that each library is active and evolving.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col d-flex">
-            <div class="card border-0 shadow-sm w-100 hover-lift fade-up fade-delay-3">
-                <div class="card-body p-4">
-                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Practical adoption</p>
-                    <h3 class="h4">Evaluation stays simple</h3>
-                    <p class="text-body-secondary mb-0">Developers can compare capabilities, confirm the current release, and jump to installation paths without digging through multiple sites first.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="pt-2 pb-5">
-    <div class="card border-0 text-bg-dark bg-gradient shadow-lg fade-up fade-delay-2">
-        <div class="card-body p-4 p-lg-5">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-8">
-                    <span class="badge text-bg-light text-dark rounded-pill mb-3">Start with the right library</span>
-                    <h2 class="display-6 fw-semibold mb-3">Use BlazorExpress as the entry point, then jump directly into the docs or demos that match your stack.</h2>
-                    <p class="mb-0 text-white-50">ChartJS is for data-rich visualizations. Bulma is for practical UI building blocks, forms, and layout. The main site keeps both easy to discover.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-grid gap-2">
-                        <a class="btn btn-light btn-lg" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">Open ChartJS</a>
-                        <a class="btn btn-outline-light btn-lg" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">Open Bulma</a>
-                        <a class="btn btn-outline-light btn-lg" href="#top">Back to top</a>
-                    </div>
+            <div class="col-lg-4">
+                <div class="d-grid gap-2">
+                    <a class="btn btn-primary btn-lg" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">Open ChartJS</a>
+                    <a class="btn btn-outline-primary btn-lg" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">Open Bulma</a>
+                    <a class="btn btn-outline-secondary btn-lg" href="#top">Back to top</a>
                 </div>
             </div>
         </div>
