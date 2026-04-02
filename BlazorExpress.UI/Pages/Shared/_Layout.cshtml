@@ -1,13 +1,33 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    @{
+        var pageTitle = ViewData["Title"]?.ToString() ?? "Home";
+        const string siteDescription = "BlazorExpress showcases focused Blazor component libraries including ChartJS and Bulma, with live demos, release highlights, docs, and source links.";
+        const string logoUrl = "https://chartjs.blazorexpress.com/_content/BlazorExpress.ChartJS.Demo.RCL/icons/logo.png";
+        const string canonicalUrl = "https://blazorexpress.com/";
+    }
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BlazorExpress</title>
+    <title>@pageTitle - BlazorExpress</title>
+    <meta name="description" content="@siteDescription" />
+    <meta name="keywords" content="BlazorExpress, Blazor components, Blazor ChartJS, Blazor Bulma, .NET 10 UI libraries, open source Blazor components" />
+    <meta name="theme-color" content="#5C2D91" />
+    <link rel="canonical" href="@canonicalUrl" />
+    <meta property="og:title" content="@pageTitle - BlazorExpress" />
+    <meta property="og:description" content="@siteDescription" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@canonicalUrl" />
+    <meta property="og:image" content="@logoUrl" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="@pageTitle - BlazorExpress" />
+    <meta name="twitter:description" content="@siteDescription" />
+    <meta name="twitter:image" content="@logoUrl" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body class="bg-light">
-    <header class="bg-primary sticky-top shadow-sm">
+    <header class="site-header sticky-top shadow-sm">
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container py-2">
                 <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" asp-area="" asp-page="/Index">
@@ -33,6 +53,9 @@
                             <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="features">Features</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="footer-links">Footer</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link@(ViewContext.RouteData.Values["page"]?.ToString() == "/Privacy" ? " active" : string.Empty)" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -47,10 +70,61 @@
         </div>
     </main>
 
-    <footer class="border-top bg-white py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
-            <p class="mb-0 text-body-secondary">BlazorExpress highlights focused component libraries like ChartJS and Bulma from one main landing page.</p>
-            <a class="link-secondary text-decoration-none" asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer id="footer-links" class="border-top bg-white py-5">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <img src="https://chartjs.blazorexpress.com/_content/BlazorExpress.ChartJS.Demo.RCL/icons/logo.png" alt="BlazorExpress logo" width="44" height="44" class="rounded-3 bg-light p-1 border" />
+                        <div>
+                            <p class="h5 mb-0">BlazorExpress</p>
+                            <p class="text-body-secondary mb-0">Focused component libraries for Blazor.</p>
+                        </div>
+                    </div>
+                    <p class="text-body-secondary mb-3">Designed and built for developers who want clean library discovery, practical documentation, and direct access to source, demos, and packages.</p>
+                    <p class="small text-body-secondary mb-0">Currently highlighting BlazorExpress.ChartJS v1.2.1 and BlazorExpress.Bulma v1.1.0.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Links</h2>
+                    <ul class="list-unstyled d-grid gap-2 mb-0">
+                        <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Index">Home</a></li>
+                        <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Index" asp-fragment="libraries">Libraries</a></li>
+                        <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Index" asp-fragment="releases">Releases</a></li>
+                        <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Libraries</h2>
+                    <ul class="list-unstyled d-grid gap-2 mb-0">
+                        <li><a class="link-secondary text-decoration-none" href="https://chartjs.blazorexpress.com/" target="_blank" rel="noreferrer">ChartJS</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">Bulma</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://www.nuget.org/packages/BlazorExpress.ChartJS" target="_blank" rel="noreferrer">ChartJS NuGet</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://www.nuget.org/packages/BlazorExpress.Bulma/" target="_blank" rel="noreferrer">Bulma NuGet</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Guides</h2>
+                    <ul class="list-unstyled d-grid gap-2 mb-0">
+                        <li><a class="link-secondary text-decoration-none" href="https://chartjs.blazorexpress.com/docs/getting-started/introduction" target="_blank" rel="noreferrer">ChartJS docs</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://bulma.blazorexpress.com/docs/getting-started/introduction" target="_blank" rel="noreferrer">Bulma docs</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://chartjs.blazorexpress.com/demos/bar-chart" target="_blank" rel="noreferrer">ChartJS demos</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://bulma.blazorexpress.com/demos/skeletons" target="_blank" rel="noreferrer">Bulma demos</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Community</h2>
+                    <ul class="list-unstyled d-grid gap-2 mb-0">
+                        <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.ChartJS" target="_blank" rel="noreferrer">ChartJS GitHub</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.Bulma" target="_blank" rel="noreferrer">Bulma GitHub</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.ChartJS/discussions" target="_blank" rel="noreferrer">ChartJS discussions</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.Bulma/discussions" target="_blank" rel="noreferrer">Bulma discussions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 border-top mt-5 pt-4">
+                <p class="small text-body-secondary mb-0">Designed and built with care by the BlazorExpress team and contributors.</p>
+                <p class="small text-body-secondary mb-0">Copyright © @DateTime.UtcNow.Year BlazorExpress.</p>
+            </div>
         </div>
     </footer>
 

@@ -1,0 +1,124 @@
+:root {
+    --bx-primary: #5c2d91;
+    --bx-primary-dark: #44206d;
+    --bx-primary-soft: #ede7f6;
+    --bx-border: rgba(92, 45, 145, 0.12);
+    --bx-shadow: 0 1rem 2.5rem rgba(68, 32, 109, 0.12);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at top right, rgba(123, 82, 171, 0.12), transparent 24%),
+        radial-gradient(circle at top left, rgba(92, 45, 145, 0.08), transparent 26%),
+        linear-gradient(180deg, #f7f3fc 0%, #ffffff 18%, #ffffff 100%);
+}
+
+.site-header {
+    background-color: var(--bx-primary-dark);
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-gradient {
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 24%),
+        linear-gradient(135deg, #44206d 0%, #5c2d91 45%, #7b52ab 100%);
+}
+
+.hero-surface {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(6px);
+}
+
+.logo-float {
+    animation: logoFloat 6s ease-in-out infinite;
+}
+
+.preview-frame {
+    border: 1px solid var(--bx-border);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: var(--bx-shadow);
+    background: #ffffff;
+}
+
+.preview-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #ffffff;
+}
+
+.hover-lift {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1.5rem 3rem rgba(68, 32, 109, 0.16);
+}
+
+.fade-up {
+    animation: fadeUp 0.75s ease-out both;
+}
+
+.fade-delay-1 {
+    animation-delay: 0.08s;
+}
+
+.fade-delay-2 {
+    animation-delay: 0.16s;
+}
+
+.fade-delay-3 {
+    animation-delay: 0.24s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-gradient {
+        border-radius: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
