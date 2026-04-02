@@ -1,10 +1,417 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="py-4 py-lg-5">
+    <div class="row g-4 g-xl-5 align-items-center">
+        <div class="col-lg-7 col-xxl-6">
+            <span class="badge rounded-pill text-bg-primary mb-3">Bootstrap 5.3.8 + Razor Pages</span>
+            <h1 class="display-3 fw-bold lh-sm mb-3">Build polished .NET 10 product pages with stock Bootstrap only.</h1>
+            <p class="lead text-body-secondary mb-4">BlazorExpress gives you a clean Razor Pages starting point with a structured landing page, Bootstrap utilities and components, and no custom CSS to maintain.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                <a class="btn btn-primary btn-lg px-4" href="#features">Explore the sections</a>
+                <a class="btn btn-outline-secondary btn-lg px-4" href="https://learn.microsoft.com/aspnet/core/razor-pages/" target="_blank" rel="noreferrer">Read Razor Pages docs</a>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-3 g-3">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Styling model</p>
+                            <p class="h5 mb-0">Bootstrap classes only</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Platform</p>
+                            <p class="h5 mb-0">ASP.NET Core Web App</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Language target</p>
+                            <p class="h5 mb-0">.NET 10 and C# 14</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-xxl-5 offset-xxl-1">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div>
+                            <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Launch profile</p>
+                            <h2 class="h3 mb-0">Marketing-ready app shell</h2>
+                        </div>
+                        <span class="badge text-bg-success">Ready</span>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Hero</p>
+                                <p class="mb-0">Strong headline, primary CTA, and quick trust signals.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Sections</p>
+                                <p class="mb-0">Feature grid, platform overview, proof points, and resources.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Dependencies</p>
+                                <p class="mb-0">Bootstrap from CDN with no local theme layer or custom scripts.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Delivery</p>
+                                <p class="mb-0">Focused markup that stays easy to iterate in Razor Pages.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group list-group-flush border rounded-3">
+                        <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            <span class="text-body-secondary">UI framework</span>
+                            <span class="fw-semibold">Bootstrap 5.3.8</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            <span class="text-body-secondary">Runtime</span>
+                            <span class="fw-semibold">net10.0</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            <span class="text-body-secondary">Language version</span>
+                            <span class="fw-semibold">C# 14.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-5">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-0">Built for teams that want fast iteration without a custom design layer</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap justify-content-lg-end gap-2">
+                        <span class="badge text-bg-light border text-dark">Responsive layout</span>
+                        <span class="badge text-bg-light border text-dark">Bootstrap utilities</span>
+                        <span class="badge text-bg-light border text-dark">Razor Pages routing</span>
+                        <span class="badge text-bg-light border text-dark">Accessible components</span>
+                        <span class="badge text-bg-light border text-dark">No custom CSS</span>
+                        <span class="badge text-bg-light border text-dark">Docs-first maintenance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="py-5">
+    <div class="row justify-content-center text-center mb-4 mb-lg-5">
+        <div class="col-xl-8">
+            <span class="badge rounded-pill text-bg-dark mb-3">Feature areas</span>
+            <h2 class="display-6 fw-semibold mb-3">A landing page structure inspired by modern framework and component-library sites.</h2>
+            <p class="lead text-body-secondary mb-0">The composition leans on strong section breaks, dense information cards, proof points, and direct calls to action while staying entirely inside Bootstrap&apos;s stock class system.</p>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Foundation</p>
+                    <h3 class="h4">Clear hero and navigation</h3>
+                    <p class="text-body-secondary mb-0">Lead with one message, a primary action, and lightweight navigation that maps directly to the main sections below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Product story</p>
+                    <h3 class="h4">Explain the value in blocks</h3>
+                    <p class="text-body-secondary mb-0">Use grouped cards to show what the app includes, what problems it solves, and what the platform assumptions are.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Delivery model</p>
+                    <h3 class="h4">Keep the frontend predictable</h3>
+                    <p class="text-body-secondary mb-0">Everything on the page is built from standard containers, grids, badges, cards, buttons, and typography utilities.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Scale</p>
+                    <h3 class="h4">Add sections without redesigning</h3>
+                    <p class="text-body-secondary mb-0">The page can grow with testimonials, pricing, changelogs, or product modules while keeping the same Bootstrap rhythm.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Maintenance</p>
+                    <h3 class="h4">No local theme drift</h3>
+                    <p class="text-body-secondary mb-0">Removing custom CSS lowers the chance of one-off overrides and keeps component behavior consistent with Bootstrap documentation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Execution</p>
+                    <h3 class="h4">Ship faster with fewer moving parts</h3>
+                    <p class="text-body-secondary mb-0">You stay on one UI toolkit, one layout model, and one server-rendered application structure for the full page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="platform" class="py-5">
+    <div class="row g-4 g-xl-5 align-items-center">
+        <div class="col-lg-6">
+            <span class="badge rounded-pill text-bg-light border text-dark mb-3">Platform fit</span>
+            <h2 class="display-6 fw-semibold mb-3">A practical baseline for product, admin, and showcase pages.</h2>
+            <p class="lead text-body-secondary mb-4">This app stays close to the defaults that Microsoft and Bootstrap document well, so future contributors can extend it without first reverse-engineering a custom theme or layout system.</p>
+            <div class="list-group shadow-sm">
+                <div class="list-group-item p-4">
+                    <h3 class="h5 mb-2">Server-rendered by default</h3>
+                    <p class="mb-0 text-body-secondary">Razor Pages keeps routing, handlers, and page structure straightforward for content-heavy screens and business apps.</p>
+                </div>
+                <div class="list-group-item p-4">
+                    <h3 class="h5 mb-2">Bootstrap handles the UI system</h3>
+                    <p class="mb-0 text-body-secondary">Spacing, layout, emphasis, and responsive behavior all come from standard utility and component classes.</p>
+                </div>
+                <div class="list-group-item p-4">
+                    <h3 class="h5 mb-2">Clean upgrade path</h3>
+                    <p class="mb-0 text-body-secondary">With .NET 10 and C# 14 pinned in the project, the baseline stays explicit and easier to keep current.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
+                        <div class="col">
+                            <div class="card h-100 bg-body-tertiary border-0">
+                                <div class="card-body">
+                                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">App type</p>
+                                    <p class="h5 mb-0">ASP.NET Core Web App</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 bg-body-tertiary border-0">
+                                <div class="card-body">
+                                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Rendering model</p>
+                                    <p class="h5 mb-0">Razor Pages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 bg-body-tertiary border-0">
+                                <div class="card-body">
+                                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">UI layer</p>
+                                    <p class="h5 mb-0">Bootstrap CDN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 bg-body-tertiary border-0">
+                                <div class="card-body">
+                                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Authoring rule</p>
+                                    <p class="h5 mb-0">No custom styles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-primary mb-4" role="alert">
+                        <div class="fw-semibold mb-1">Recommended workflow</div>
+                        Start with Bootstrap layout primitives, compose sections from cards and grids, and only add new content blocks when they can be expressed with existing classes.
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-3 g-3 text-center">
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <div class="display-6 fw-bold">1</div>
+                                <p class="mb-0 text-body-secondary">UI toolkit</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <div class="display-6 fw-bold">0</div>
+                                <p class="mb-0 text-body-secondary">Custom CSS files</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border rounded-3 h-100 p-3">
+                                <div class="display-6 fw-bold">100%</div>
+                                <p class="mb-0 text-body-secondary">Bootstrap classes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body p-4">
+                    <p class="display-6 fw-bold mb-2">6</p>
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-0">Content sections ready to extend</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body p-4">
+                    <p class="display-6 fw-bold mb-2">5.3.8</p>
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-0">Bootstrap version in use</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body p-4">
+                    <p class="display-6 fw-bold mb-2">10</p>
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-0">.NET major version targeted</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body p-4">
+                    <p class="display-6 fw-bold mb-2">14</p>
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-0">C# language version pinned</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4 p-lg-5">
+                    <span class="badge rounded-pill text-bg-success mb-3">Why this works</span>
+                    <h2 class="h1 mb-3">A tighter frontend surface means fewer surprises during delivery.</h2>
+                    <p class="text-body-secondary mb-4">This setup is aimed at teams that want a professional landing page without introducing bespoke CSS, custom component wrappers, or a parallel design system that needs its own maintenance budget.</p>
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                            <div class="border rounded-3 p-3 h-100">
+                                <h3 class="h5">Familiar conventions</h3>
+                                <p class="mb-0 text-body-secondary">Future contributors can rely on Bootstrap and Razor Pages docs instead of project-specific styling rules.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border rounded-3 p-3 h-100">
+                                <h3 class="h5">Consistent responsiveness</h3>
+                                <p class="mb-0 text-body-secondary">Grid classes, container widths, and component defaults handle the mobile and desktop layout work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4 p-lg-5">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Delivery note</p>
+                    <blockquote class="blockquote mb-4">
+                        <p class="mb-0">Use Bootstrap as the system, not just the dependency.</p>
+                    </blockquote>
+                    <p class="text-body-secondary mb-4">That constraint keeps the page coherent. Every section on this home page is composed from stock spacing, typography, border, color, and layout classes.</p>
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-primary" href="https://getbootstrap.com/docs/5.3/examples/" target="_blank" rel="noreferrer">Browse Bootstrap examples</a>
+                        <a class="btn btn-outline-secondary" href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank" rel="noreferrer">Review grid and layout docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resources" class="py-5">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+        <div>
+            <span class="badge rounded-pill text-bg-light border text-dark mb-3">Resources</span>
+            <h2 class="display-6 fw-semibold mb-2">Keep the page aligned with the platform.</h2>
+            <p class="text-body-secondary mb-0">These references match the constraints used for this project: Razor Pages, Bootstrap latest, .NET 10, and no custom styling.</p>
+        </div>
+        <a class="btn btn-outline-primary" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noreferrer">Open Bootstrap quick start</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Documentation</p>
+                    <h3 class="h4">Razor Pages fundamentals</h3>
+                    <p class="text-body-secondary">Use the official docs for routing, handlers, model binding, and page organization.</p>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://learn.microsoft.com/aspnet/core/razor-pages/" target="_blank" rel="noreferrer">Open docs</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">UI reference</p>
+                    <h3 class="h4">Bootstrap components and utilities</h3>
+                    <p class="text-body-secondary">Reach for cards, badges, grids, buttons, alerts, navs, and typography utilities before inventing new patterns.</p>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank" rel="noreferrer">Browse components</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="small text-uppercase text-body-secondary fw-semibold mb-2">Project baseline</p>
+                    <h3 class="h4">Build on the current stack rules</h3>
+                    <p class="text-body-secondary">Keep the app on Bootstrap latest, .NET 10, Razor Pages, and C# 14 unless the project direction changes deliberately.</p>
+                    <a class="btn btn-sm btn-outline-secondary" asp-page="/Privacy">View a secondary page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-2 pb-5">
+    <div class="card border-0 text-bg-dark shadow-lg">
+        <div class="card-body p-4 p-lg-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge text-bg-light text-dark rounded-pill mb-3">Next step</span>
+                    <h2 class="display-6 fw-semibold mb-3">Use this page as the base for your product story, then keep extending it with Bootstrap primitives.</h2>
+                    <p class="mb-0 text-white-50">Pricing tables, testimonials, release notes, or product bundles can be added as new sections without changing the underlying styling rule.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-light btn-lg" href="#top">Back to top</a>
+                        <a class="btn btn-outline-light btn-lg" href="#resources">Review resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -3,49 +3,55 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BlazorExpress.UI</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/BlazorExpress.UI.styles.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - BlazorExpress</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">BlazorExpress.UI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+<body class="bg-body-tertiary">
+    <header class="border-bottom bg-white sticky-top">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+            <div class="container py-2">
+                <a class="navbar-brand fw-semibold" asp-area="" asp-page="/Index">BlazorExpress</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link@(ViewContext.RouteData.Values["page"]?.ToString() == "/Index" ? " active" : string.Empty)" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="platform">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="resources">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link@(ViewContext.RouteData.Values["page"]?.ToString() == "/Privacy" ? " active" : string.Empty)" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                     </ul>
+                    <a class="btn btn-outline-primary ms-lg-3" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noreferrer">Bootstrap docs</a>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
+    <main role="main" class="py-5">
         <div class="container">
-            &copy; 2026 - BlazorExpress.UI - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="border-top bg-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+            <p class="mb-0 text-body-secondary">ASP.NET Core Razor Pages on .NET 10 with Bootstrap 5.3.8.</p>
+            <a class="link-secondary text-decoration-none" asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
