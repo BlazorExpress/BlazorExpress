@@ -49,11 +49,15 @@ body {
     background: #ffffff;
 }
 
-.preview-frame iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    background: #ffffff;
+.preview-panel {
+    background:
+        radial-gradient(circle at top right, rgba(92, 45, 145, 0.08), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #fbf8ff 100%);
+}
+
+.snapshot-surface {
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid var(--bx-border);
 }
 
 .hover-lift {
