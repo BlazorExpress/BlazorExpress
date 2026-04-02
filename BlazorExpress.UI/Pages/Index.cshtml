@@ -1,7 +1,11 @@
 ﻿@page
 @model IndexModel
+@inject Microsoft.Extensions.Options.IOptions<LibraryVersionsOptions> LibraryVersionsOptions
 @{
     ViewData["Title"] = "Blazor Component Libraries";
+    var versions = LibraryVersionsOptions.Value;
+    var chartJsVersion = string.IsNullOrWhiteSpace(versions.ChartJs) ? string.Empty : $"v{versions.ChartJs}";
+    var bulmaVersion = string.IsNullOrWhiteSpace(versions.Bulma) ? string.Empty : $"v{versions.Bulma}";
 }
 
 <section id="top" class="landing-hero mb-4 mb-lg-5 fade-up">
@@ -47,14 +51,14 @@
                                     <span class="d-block fw-semibold text-dark">BlazorExpress.ChartJS</span>
                                     <span class="small text-body-secondary">Our charting library for Blazor dashboards, reports, and data-heavy screens.</span>
                                 </span>
-                                <span class="badge text-bg-light border text-dark">v1.2.1</span>
+                                <span class="badge text-bg-light border text-dark">@chartJsVersion</span>
                             </a>
                             <a class="simple-link-card text-decoration-none" href="https://bulma.blazorexpress.com/" target="_blank" rel="noreferrer">
                                 <span>
                                     <span class="d-block fw-semibold text-dark">BlazorExpress.Bulma</span>
                                     <span class="small text-body-secondary">Our Bulma-based component library for forms, dialogs, and layout work.</span>
                                 </span>
-                                <span class="badge text-bg-light border text-dark">v1.1.0</span>
+                                <span class="badge text-bg-light border text-dark">@bulmaVersion</span>
                             </a>
                         </div>
                         <hr class="my-4" />
@@ -71,7 +75,7 @@
         <div class="col-xl-8 fade-up fade-delay-1">
             <span class="badge rounded-pill text-bg-light border text-dark mb-3">Libraries</span>
             <h2 class="display-6 fw-semibold mb-3">These are the libraries we actively build and release.</h2>
-            <p class="lead text-body-secondary mb-0">We keep this page short on purpose so customers can understand what each library is for, what changed recently, and where to go next.</p>
+            <p class="lead text-body-secondary mb-0">This page gives customers a clear view of what each library does, what changed recently, and where to go next.</p>
         </div>
     </div>
     <div class="row row-cols-1 row-cols-xl-2 g-4">
@@ -84,7 +88,7 @@
                             <h3 class="h2 mb-2">BlazorExpress.ChartJS</h3>
                             <p class="text-body-secondary mb-0">We built this library for Blazor apps that need clean chart components and solid data visualization without extra clutter.</p>
                         </div>
-                        <span class="badge text-bg-light border text-dark">v1.2.1</span>
+                        <span class="badge text-bg-light border text-dark">@chartJsVersion</span>
                     </div>
                     <div class="simple-detail-grid mb-4">
                         <div class="simple-detail rounded-4 p-3">
@@ -93,7 +97,7 @@
                         </div>
                         <div class="simple-detail rounded-4 p-3">
                             <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Latest update</p>
-                            <p class="mb-0">In v1.2.1 we refined styling, added LineChart features, and tightened the documentation.</p>
+                            <p class="mb-0">In @chartJsVersion we refined styling, added LineChart features, and tightened the documentation.</p>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap gap-2">
@@ -115,7 +119,7 @@
                             <h3 class="h2 mb-2">BlazorExpress.Bulma</h3>
                             <p class="text-body-secondary mb-0">We built this library for Blazor apps that need dependable form controls, dialogs, layout helpers, and everyday UI pieces.</p>
                         </div>
-                        <span class="badge text-bg-light border text-dark">v1.1.0</span>
+                        <span class="badge text-bg-light border text-dark">@bulmaVersion</span>
                     </div>
                     <div class="simple-detail-grid mb-4">
                         <div class="simple-detail rounded-4 p-3">
@@ -124,7 +128,7 @@
                         </div>
                         <div class="simple-detail rounded-4 p-3">
                             <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Latest update</p>
-                            <p class="mb-0">In v1.1.0 we added Dropdown, Navbar, NumberInput, and PdfViewer components.</p>
+                            <p class="mb-0">In @bulmaVersion we added Dropdown, Navbar, NumberInput, and PdfViewer components.</p>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap gap-2">
@@ -146,7 +150,7 @@
             <div class="card border-0 shadow-sm w-100 fade-up fade-delay-1">
                 <div class="card-body p-4">
                     <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Release</p>
-                    <h3 class="h4 mb-3">ChartJS v1.2.1</h3>
+                    <h3 class="h4 mb-3">ChartJS @chartJsVersion</h3>
                     <p class="text-body-secondary mb-0">We focused this release on cleaner styling, more LineChart options, and clearer docs.</p>
                 </div>
             </div>
@@ -155,7 +159,7 @@
             <div class="card border-0 shadow-sm w-100 fade-up fade-delay-2">
                 <div class="card-body p-4">
                     <p class="small text-uppercase fw-semibold text-body-tertiary mb-2">Release</p>
-                    <h3 class="h4 mb-3">Bulma v1.1.0</h3>
+                    <h3 class="h4 mb-3">Bulma @bulmaVersion</h3>
                     <p class="text-body-secondary mb-0">We expanded the library with new navigation, input, and viewer components for day-to-day UI work.</p>
                 </div>
             </div>

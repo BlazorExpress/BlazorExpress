@@ -1,7 +1,10 @@
+using BlazorExpress.UI.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.Configure<LibraryVersionsOptions>(builder.Configuration.GetSection(LibraryVersionsOptions.SectionName));
 
 var app = builder.Build();
 

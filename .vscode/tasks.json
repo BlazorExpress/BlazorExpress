@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build BlazorExpress solution",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				".\\BlazorExpress.slnx"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build BlazorExpress solution",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				".\\BlazorExpress.slnx"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build"
+		}
+	]
+}

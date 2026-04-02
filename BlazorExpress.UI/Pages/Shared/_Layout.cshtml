@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.Extensions.Options.IOptions<LibraryVersionsOptions> LibraryVersionsOptions
+@{
+    var versions = LibraryVersionsOptions.Value;
+    var chartJsVersion = string.IsNullOrWhiteSpace(versions.ChartJs) ? string.Empty : $"v{versions.ChartJs}";
+    var bulmaVersion = string.IsNullOrWhiteSpace(versions.Bulma) ? string.Empty : $"v{versions.Bulma}";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     @{
@@ -79,7 +86,7 @@
                         </div>
                     </div>
                     <p class="text-body-secondary mb-3">BlazorExpress brings together focused Blazor libraries with practical documentation, live demos, open-source repositories, and direct package installation links.</p>
-                    <p class="small text-body-secondary mb-0">Currently highlighting BlazorExpress.ChartJS v1.2.1 and BlazorExpress.Bulma v1.1.0.</p>
+                    <p class="small text-body-secondary mb-0">Currently highlighting BlazorExpress.ChartJS @chartJsVersion and BlazorExpress.Bulma @bulmaVersion.</p>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h2 class="h6 text-uppercase text-body-secondary mb-3">Links</h2>
