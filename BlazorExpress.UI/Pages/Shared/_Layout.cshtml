@@ -56,12 +56,6 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="releases">Releases</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Index" asp-fragment="features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link@(ViewContext.RouteData.Values["page"]?.ToString() == "/Privacy" ? " active" : string.Empty)" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
                     </ul>
                     <a class="btn btn-light ms-lg-3" asp-area="" asp-page="/Index" asp-fragment="libraries">Browse libraries</a>
                 </div>
@@ -77,7 +71,7 @@
     <footer id="footer-links" class="border-top bg-white py-5">
         <div class="container">
             <div class="row g-4 g-lg-5">
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="d-flex align-items-center gap-3 mb-3">
                         <img src="https://chartjs.blazorexpress.com/_content/BlazorExpress.ChartJS.Demo.RCL/icons/logo.png" alt="BlazorExpress logo" width="44" height="44" class="rounded-3 bg-light p-1 border" />
                         <div>
@@ -89,12 +83,11 @@
                     <p class="small text-body-secondary mb-0">Currently highlighting BlazorExpress.ChartJS @chartJsVersion and BlazorExpress.Bulma @bulmaVersion.</p>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Links</h2>
+                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Navigate</h2>
                     <ul class="list-unstyled d-grid gap-2 mb-0">
                         <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Index">Home</a></li>
                         <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Index" asp-fragment="libraries">Libraries</a></li>
                         <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Index" asp-fragment="releases">Releases</a></li>
-                        <li><a class="link-secondary text-decoration-none" asp-area="" asp-page="/Privacy">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
@@ -106,22 +99,13 @@
                         <li><a class="link-secondary text-decoration-none" href="https://www.nuget.org/packages/BlazorExpress.Bulma/" target="_blank" rel="noreferrer">Bulma NuGet</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-lg-2">
-                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Guides</h2>
+                <div class="col-lg-3">
+                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Resources</h2>
                     <ul class="list-unstyled d-grid gap-2 mb-0">
                         <li><a class="link-secondary text-decoration-none" href="https://chartjs.blazorexpress.com/docs/getting-started/introduction" target="_blank" rel="noreferrer">ChartJS docs</a></li>
                         <li><a class="link-secondary text-decoration-none" href="https://bulma.blazorexpress.com/docs/getting-started/introduction" target="_blank" rel="noreferrer">Bulma docs</a></li>
-                        <li><a class="link-secondary text-decoration-none" href="https://chartjs.blazorexpress.com/demos/bar-chart" target="_blank" rel="noreferrer">ChartJS demos</a></li>
-                        <li><a class="link-secondary text-decoration-none" href="https://bulma.blazorexpress.com/demos/skeletons" target="_blank" rel="noreferrer">Bulma demos</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <h2 class="h6 text-uppercase text-body-secondary mb-3">Community</h2>
-                    <ul class="list-unstyled d-grid gap-2 mb-0">
                         <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.ChartJS" target="_blank" rel="noreferrer">ChartJS GitHub</a></li>
                         <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.Bulma" target="_blank" rel="noreferrer">Bulma GitHub</a></li>
-                        <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.ChartJS/discussions" target="_blank" rel="noreferrer">ChartJS discussions</a></li>
-                        <li><a class="link-secondary text-decoration-none" href="https://github.com/BlazorExpress/BlazorExpress.Bulma/discussions" target="_blank" rel="noreferrer">Bulma discussions</a></li>
                     </ul>
                 </div>
             </div>
